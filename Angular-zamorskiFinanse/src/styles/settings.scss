@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+// COLORS 
+
+$text-color: rgb(0, 23, 124);
+$text-secondary-color: rgb(255, 255, 255);
+$buttons-color: gold;
+$background-color: rgb(255, 255, 255);
+
+
+// FONTS 
+
+$content-font: 'Lato', sans-serif;
+$header-font: 'Roboto', sans-serif;
+$content-font-size: 20px;
+$header-font-size: 52px;
+
+
+// MIXINS
+
+@mixin tiny-screens () {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin small-screens () {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin medium-screens () {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large-screens () {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin extra-large-screens () {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mega-large-screens () {
+  @media only screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+
