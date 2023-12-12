@@ -1,0 +1,54 @@
+@import '../../styles/settings.scss';
+
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(1, 1, 82);
+  justify-content: space-around;
+  padding: 30px 100px;
+  width: 100%;
+  @include extra-large-screens {
+    padding: 15px 50px;
+  }
+  @include medium-screens {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+.value {
+  max-width: 30%;
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+  margin: 0;
+  color: $text-secondary-color;
+  @include extra-large-screens {
+    max-width: 45%;
+    padding: 15px;
+  }
+  @include medium-screens {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 20px 0 15px;
+    @include small-screens {
+      margin: 10px 0 5px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+    @include small-screens {
+      font-size: 18px;
+    }
+  }
+}

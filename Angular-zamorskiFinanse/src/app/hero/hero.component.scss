@@ -1,0 +1,29 @@
+@import '../../styles/settings.scss';
+
+.hero {
+  background: url('../../assets/SplashFoto1.png');
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $text-secondary-color;
+
+  h1 {
+    font-size: $content-font-size * 3;
+    margin: 0 auto 0px;
+  }
+
+  h2 {
+    font-size: $content-font-size * 2.5;
+    color: $buttons-color;
+    margin: 0;
+  }
+
+  p {
+    max-width: 1000px;
+  }
+}
