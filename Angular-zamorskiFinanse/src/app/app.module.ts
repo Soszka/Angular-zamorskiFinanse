@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { TitleComponent } from './title/title.component';
 import { OfertsPreviewComponent } from './oferts-preview/oferts-preview.component';
 import { OurWorkComponent } from './our-work/our-work.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OurWorkComponent } from './our-work/our-work.component';
     AboutComponent,
     TitleComponent,
     OfertsPreviewComponent,
-    OurWorkComponent
+    OurWorkComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, MaterialModule],
   bootstrap: [AppComponent],
