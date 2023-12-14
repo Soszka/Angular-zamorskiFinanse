@@ -1,0 +1,27 @@
+.work {
+  display: flex;
+  max-width: 1400px;
+  margin: 100px auto 30px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.work-item {
+  padding: 30px;
+  position: relative;
+  
+  .icon {
+    font-size: 70px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+    height: 140px;
+  }
+}
