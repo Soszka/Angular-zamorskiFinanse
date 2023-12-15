@@ -10,7 +10,9 @@ import { AboutComponent } from './about/about.component';
 import { TitleComponent } from './title/title.component';
 import { OfertsPreviewComponent } from './oferts-preview/oferts-preview.component';
 import { OurWorkComponent } from './our-work/our-work.component';
+import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,14 @@ import { FooterComponent } from './footer/footer.component';
     TitleComponent,
     OfertsPreviewComponent,
     OurWorkComponent,
+    ContactComponent,
     FooterComponent
   ],
-  imports: [BrowserModule, MaterialModule],
+  imports: [
+    BrowserModule,
+    MaterialModule,
+    FontAwesomeModule
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
