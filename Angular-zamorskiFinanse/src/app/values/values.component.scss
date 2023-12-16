@@ -34,11 +34,15 @@
     padding: 0;
   }
 
+  .icon {
+    font-size: 45px;
+  }
+
   h3 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
-    margin: 20px 0 15px;
+    margin: 0px 0 15px;
     @include small-screens {
       margin: 10px 0 5px;
     }
