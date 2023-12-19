@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialModule } from './material.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -12,7 +13,7 @@ import { OfertsPreviewComponent } from './oferts-preview/oferts-preview.componen
 import { OurWorkComponent } from './our-work/our-work.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { OfertsComponent } from './oferts/oferts.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     OfertsPreviewComponent,
     OurWorkComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    OfertsComponent
   ],
   imports: [
     BrowserModule,
