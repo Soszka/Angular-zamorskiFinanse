@@ -30,7 +30,8 @@
       margin-top: 5px;
     }
 
-    button {
+    a {
+      text-decoration: none;
       color: $text-color;
       text-transform: uppercase;
       background-color: transparent;
@@ -40,7 +41,7 @@
       position: relative;
     }
 
-    button::after {
+    a::after {
       content: '';
       display: block;
       position: absolute;
@@ -54,7 +55,7 @@
       transition: transform 0.5s ease; 
     }
   
-    button:hover::after {
+    a:hover::after {
       transform: scaleX(1); 
       transform-origin: bottom left;
     }
