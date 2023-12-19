@@ -14,6 +14,7 @@ import { OurWorkComponent } from './our-work/our-work.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { OfertsComponent } from './oferts/oferts.component';
+import { CompanyComponent } from './company/company.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OfertsComponent } from './oferts/oferts.component';
     OurWorkComponent,
     ContactComponent,
     FooterComponent,
-    OfertsComponent
+    OfertsComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule,

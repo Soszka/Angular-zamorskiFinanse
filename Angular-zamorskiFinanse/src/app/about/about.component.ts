@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  sectionName: string = 'O mnie';
+  sectionName: string = 'O Mnie';
 }
