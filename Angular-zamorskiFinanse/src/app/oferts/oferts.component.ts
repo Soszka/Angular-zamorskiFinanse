@@ -5,6 +5,7 @@ interface Ofert {
   description: string;
   image: string;
   isActive: boolean;
+  delay: number
 }
 
 @Component({
@@ -19,61 +20,71 @@ export class OfertsComponent {
       title: 'Ubezpieczenie na życie',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto1.jpg',
-      isActive: false
+      isActive: false,
+      delay: 0
     },
     {
       title: 'Ubezpieczenie zdrowotne',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto2.jpg',
-      isActive: false
+      isActive: false,
+      delay: 200
     },
     {
       title: 'Inwestycje kapitału',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto3.jpg',
-      isActive: false
+      isActive: false,
+      delay: 400
     },
     {
       title: 'Programy oszczędnościowe',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto4.jpg',
-      isActive: false
+      isActive: false,
+      delay: 600
     },
     {
       title: 'Ubezpieczenie majątkowe',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto5.jpg',
-      isActive: false
+      isActive: false,
+      delay: 200
     },
     {
       title: 'Ubezpieczenie komunikacyjne',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto6.jpg',
-      isActive: false
+      isActive: false,
+      delay: 300
     },
     {
       title: 'Kredyty',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto7.jpg',
-      isActive: false
+      isActive: false,
+      delay: 400
     },
     {
       title: 'Nieruchomości',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto8.jpg',
-      isActive: false
+      isActive: false,
+      delay: 500
     },
     {
       title: 'Leasing',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto9.jpg',
-      isActive: false
+      isActive: false,
+      delay: 600
     },
     {
       title: 'Oferta dla firm',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto10.jpg',
-      isActive: false
+      isActive: false,
+      delay: 700
     },
   ]
 

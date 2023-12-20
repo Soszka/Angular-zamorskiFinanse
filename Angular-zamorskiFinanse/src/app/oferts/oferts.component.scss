@@ -1,19 +1,13 @@
 @import '../../styles/settings.scss';
 
 .oferts {
-  max-width: 1400px;
   margin: 0 auto 30px;
   border-bottom: 1px solid $text-color;
-  border-radius: 10px;
 }
 
 .ofert {
   display: flex;
   cursor: pointer;
-
-  &.first-ofert {
-    margin-top: 70px;
-  }
 
   .ofert-description {
     width: 30%;
@@ -64,12 +58,15 @@
     }
 
     a {
+      color: white;
+      text-decoration: none;
       display: block;
       width: max-content; 
       margin: 0 auto;
       font-size: $content-font-size * 1.2;
       cursor: pointer;
       position: relative;
+      transition: all 2s;
 
       &::after {
         content: '';

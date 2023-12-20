@@ -3,6 +3,7 @@
 nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 3px solid $text-color;
 
   .logo {
     margin: 20px 70px;

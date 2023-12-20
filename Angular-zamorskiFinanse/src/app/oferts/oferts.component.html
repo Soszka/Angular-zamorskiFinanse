@@ -1,16 +1,18 @@
-<div class="oferts">
+<div class="oferts" id="top">
   <app-title [sectionTitle]="sectionName"></app-title>
   <div 
      *ngFor="let ofert of oferts; let i = index"
      class="ofert" 
      [ngClass]="{'active': ofert.isActive, 'first-ofert': i === 0} "
-     (click)="toggleActive(ofert)">
+     (click)="toggleActive(ofert)"
+     data-aos="zoom-in"
+     [attr.data-aos-delay]="ofert.delay">
     <div class="ofert-description">
       <h2>{{ ofert.title }}</h2>
       <p *ngIf="ofert.isActive">
         {{ ofert.description }}
       </p>
-      <a class="contact-link" *ngIf="ofert.isActive">KONTAKT</a>
+      <a class="contact-link" href="#contact" *ngIf="ofert.isActive">KONTAKT</a>
     </div>
     <div class="ofert-image">
       <img [src]="ofert.image" alt="">
