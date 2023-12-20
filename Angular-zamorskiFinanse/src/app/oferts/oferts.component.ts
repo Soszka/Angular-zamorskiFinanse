@@ -49,42 +49,42 @@ export class OfertsComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto5.jpg',
       isActive: false,
-      delay: 200
+      delay: 100
     },
     {
       title: 'Ubezpieczenie komunikacyjne',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto6.jpg',
       isActive: false,
-      delay: 300
+      delay: 200
     },
     {
       title: 'Kredyty',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto7.jpg',
       isActive: false,
-      delay: 400
+      delay: 300
     },
     {
       title: 'Nieruchomości',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto8.jpg',
       isActive: false,
-      delay: 500
+      delay: 300
     },
     {
       title: 'Leasing',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto9.jpg',
       isActive: false,
-      delay: 600
+      delay: 300
     },
     {
       title: 'Oferta dla firm',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto10.jpg',
       isActive: false,
-      delay: 700
+      delay: 300
     },
   ]
 
