@@ -1,0 +1,17 @@
+<div class="navigation">
+  <nav id="nav">
+    <div class="logo">
+      <a routerLink="/">zamorskifinanse.pl</a>
+    </div>
+    <fa-icon class="menu-icon" [icon]="isNavExpanded ? faTimes : faBars" (click)="toggleNav()"></fa-icon>
+    <div>
+      <ul>
+        <li><a routerLink="/oferts" routerLinkActive="active-link">OFERTY</a></li>
+        <li><a routerLink="/company" routerLinkActive="active-link">O FIRMIE</a></li>
+        <li><a href="https://www.linkedin.com/in/jay-zamorski-217176272/" target="_blank">LINKEDIN</a></li>
+        <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <app-expanded-nav [isNavExpanded]="isNavExpanded" (clickedLinkEvent)="handleClickedLink()"></app-expanded-nav>
+</div>

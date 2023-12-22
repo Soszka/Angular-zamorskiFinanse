@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  transition: 2s;
+  overflow: hidden;
+
+  li {
+      margin: 40px;
+
+    a {
+      font-size: 22px;
+      text-decoration: none;
+      color: $text-color;
+
+      &.active-link {
+        color: rgb(228, 190, 0);
+      }
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+}
