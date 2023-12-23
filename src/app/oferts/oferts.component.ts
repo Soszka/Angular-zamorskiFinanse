@@ -24,6 +24,7 @@ export class OfertsComponent {
       this.isMediumScreen = window.innerWidth <= 768; 
     });
   }
+  
   oferts: Ofert[] = [
     {
       title: 'Ubezpieczenie na życie',

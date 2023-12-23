@@ -1,9 +1,14 @@
+@import '../../styles/settings.scss';
+
 .company-content {
   display: flex;
 
   .company-image {
     height: 500px;
     width: 50%;
+    @include extra-large-screens {
+      display: none;
+    }
 
     img {
       height: 100%;
@@ -17,10 +22,27 @@
     height: 500px;
     padding: 40px;
     text-align: center;
+    @include extra-large-screens {
+      width: 100%;
+      height: auto;
+    }
+    @include medium-screens {
+      padding: 20px;
+    }
 
     h3 {
-      margin-top: 0;
+      margin: 0;
       font-size: 36px;
+
+      @include medium-screens {
+        font-size: 28px;
+      }
+    }
+
+    p {
+      @include medium-screens {
+        font-size: $content-font-size * 0.9;
+      }
     }
   }
 }
@@ -30,11 +52,21 @@
   background-color: rgb(0, 0, 58);
   color: white;
   margin: 30px 0;
+
+  @include large-screens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+  }
   
   .company-number {
    width: 20%;
    text-align: center;
-   padding: 20px; 
+   padding: 20px;
+   @include large-screens {
+    width: 90%;
+  }
   }
 
   h2 {

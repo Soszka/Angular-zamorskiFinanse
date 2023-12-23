@@ -2,10 +2,13 @@
 
 .oferts {
   margin: 0 auto 30px;
+  @include medium-screens {
+    margin-bottom: 10px;
+  }
 }
 
 .first-ofert {
-  border-top: 1px solid $text-color;
+  border-top: 3px solid $text-color;
 }
 
 .ofert {
@@ -15,8 +18,8 @@
   .ofert-description {
     width: 30%;
     text-align: center;
-    border-bottom: 1px solid $text-color;
-    border-left: 1px solid $text-color;
+    border-bottom: 3px solid $text-color;
+    border-left: 3px solid $text-color;
     transition: all 1s;
     display: flex;
     justify-content: center;
