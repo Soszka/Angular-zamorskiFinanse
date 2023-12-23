@@ -23,6 +23,7 @@
     width: 100%;
     padding: 0 50px;
     color: white;
+    margin-bottom: 0px;
     @include medium-screens {
       padding: 0 10px;
       font-size: $content-font-size * 0.9;

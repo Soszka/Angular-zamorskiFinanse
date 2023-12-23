@@ -7,8 +7,8 @@
      (click)="toggleActive(ofert)"
      data-aos="zoom-in"
      [attr.data-aos-delay]="ofert.delay">
-    <div class="ofert-description">
-      <h2>{{ ofert.title }}</h2>
+    <div class="ofert-description" [ngStyle]="{'background-image': isMediumScreen ? 'url(' + ofert.imageSm + ')' : 'none'}">
+      <h2 *ngIf="!ofert.isActive">{{ ofert.title }}</h2>
       <p *ngIf="ofert.isActive">
         {{ ofert.description }}
       </p>
