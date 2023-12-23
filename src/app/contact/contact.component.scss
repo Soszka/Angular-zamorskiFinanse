@@ -8,6 +8,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  padding: 0 20px;
+  @include extra-large-screens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
 
   a {
     color: $text-color;
@@ -19,10 +26,16 @@
     border-radius: 50px;
     cursor: pointer;
     width: 22%;
+    @include extra-large-screens {
+      width: 70%;
+      margin: 20px auto;
+    }
+    @include small-screens {
+      width: 90%;
+    }
 
     .icon {
       margin-right: 5px;
-      transition: transform 2s;
     }
 
     &:hover {
@@ -33,9 +46,15 @@
 }
 
 h3 {
+  margin-left: 20px;
   font-size: 26px;
   span {
     color: rgb(228, 190, 0);
+  }
+
+  @include extra-large-screens {
+    text-align: center;
+    margin: 0 0 6px;
   }
 }
 
@@ -48,6 +67,10 @@ h3 {
   font-size: $content-font-size * 1.5;
   cursor: pointer;
   position: relative;
+
+  @include extra-large-screens {
+    margin: 20px auto;
+  }
 
   &::after {
     content: '';

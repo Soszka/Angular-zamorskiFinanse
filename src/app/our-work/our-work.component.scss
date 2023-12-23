@@ -14,6 +14,11 @@
 .work-item {
   padding: 30px;
   position: relative;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+  
   @include extra-large-screens {
     width: 45%;
   }
