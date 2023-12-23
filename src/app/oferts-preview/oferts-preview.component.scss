@@ -4,20 +4,37 @@
   background-color: rgb(206, 217, 226);
   margin-top: 30px;
   height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 60px 30px;
+  @include large-screens {
+    padding: 30px;
+    height: auto;
+  }
 
   .content {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    @include large-screens {
+      display: block;
+      text-align: center;
+    }
   }
 
   .heading {
     flex: 1;
     padding-right: 120px;
     font-size: 18px;
+    @include large-screens {
+      margin-top: 20px;
+      padding: 0;
+    }
+    @include medium-screens {
+      font-size: 16px;
+
+      h1 {
+        margin-top: 0;
+      }
+    }
   }
 
   .description {
@@ -25,6 +42,10 @@
     padding-left: 120px;
     text-align: center;
     border-left: 2px solid $text-color;
+    @include large-screens {
+      padding: 0;
+      border-left: none;
+    }
 
     p {
       margin-top: 5px;
@@ -39,6 +60,12 @@
       font-size: $content-font-size * 1.5;
       cursor: pointer;
       position: relative;
+      @include large-screens {
+       display: inline-block;
+      }
+      @include medium-screens {
+        font-size: $content-font-size * 1.35;
+      }
     }
 
     a::after {
