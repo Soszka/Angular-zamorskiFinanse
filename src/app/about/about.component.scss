@@ -5,16 +5,43 @@
  justify-content: center;
  max-width: 1400px;
  margin: 0 auto;
+  @include large-screens {
+    text-align: center;
+  }
 }
 
 .description {
   font-size: $content-font-size * 1.1;
   width: 50%;
   margin: 10px 50px 0 0;
+  @include large-screens {
+    background: url('../../assets/AboutFoto1.jpeg');
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    padding: 0 50px;
+    color: white;
+    @include medium-screens {
+      padding: 0 10px;
+      font-size: $content-font-size * 0.9;
+    }
+  }
+  
 }
 
 .image {
   margin-left: 50px;
+  @include mega-large-screens {
+    margin-top: 40px;
+  }
+  @include extra-large-screens {
+    margin-top: 70px;
+  }
+  @include large-screens {
+    display: none;
+  }
   
   img {
     width: 333px; 

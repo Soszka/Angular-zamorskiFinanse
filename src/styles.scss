@@ -16,4 +16,6 @@ body {
 
 body.overflowY-hidden {
   overflow-y: hidden;
+  position: fixed;
+  width: 100%;
 }

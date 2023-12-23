@@ -17,7 +17,7 @@ import { faBriefcase, faBuilding, faEnvelope, faHome} from '@fortawesome/free-so
         height: '100vh',
         opacity: '1',
       })),
-      transition('collapsed <=> expanded', animate(750)),
+      transition('collapsed <=> expanded', animate(400)),
     ])
   ],
 })

@@ -11,19 +11,61 @@
   align-items: center;
   text-align: center;
   color: $text-secondary-color;
+  @include large-screens {
+    background: url('../../assets/SplashFoto2.jpg');
+    background-position: center top;
+    background-size: cover;
+    padding: 60px 30px;
+    height: auto;
+  }
 
   h1 {
     font-size: $content-font-size * 3;
     margin: 0 auto 0px;
+    @include small-screens {
+      margin: 20px;
+      font-size: $content-font-size * 2.5;
+     }
   }
 
   h2 {
     font-size: $content-font-size * 2.5;
     color: $buttons-color;
     margin: 0;
+    @include small-screens {
+
+      font-size: $content-font-size * 2;
+     }
   }
 
   p {
     max-width: 1000px;
+    @include small-screens {
+     display:none;
+    }
+  }
+
+  a {
+    display: none;
+    
+    @include small-screens {
+      text-decoration: none;
+      color: white;
+      display: inline-block; 
+      margin: 50px auto;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      animation: pulseAnimation 2s infinite; 
+
+      @keyframes pulseAnimation {
+        0%, 100% {
+          transform: scale(1); 
+        }
+        50% {
+          transform: scale(1.5); 
+        }
+      }
+    }
   }
 }

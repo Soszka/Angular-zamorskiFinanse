@@ -26,7 +26,7 @@ export class HeaderNavComponent {
     }
     setTimeout(() => {
       AOS.refresh();
-    }, 750); 
+    }, 430); 
   }
 
   private checkAndCloseNav(): void {
