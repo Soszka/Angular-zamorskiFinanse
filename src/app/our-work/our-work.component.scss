@@ -1,14 +1,26 @@
+@import '../../styles/settings.scss';
+
 .work {
   display: flex;
   max-width: 1400px;
   margin: 100px auto 30px;
   justify-content: space-between;
   text-align: center;
+  @include extra-large-screens {
+    flex-wrap: wrap;
+  }
 }
 
 .work-item {
   padding: 30px;
   position: relative;
+  @include extra-large-screens {
+    width: 45%;
+  }
+  @include medium-screens {
+    margin: 0 auto;
+    width: 90%;
+  }
   
   .icon {
     font-size: 70px;
@@ -23,5 +35,18 @@
   h2 {
     font-size: 28px;
     height: 140px;
+    @include medium-screens {
+      height: 70px;
+      font-size: 24px;
+    }
+    @include small-screens {
+      height: 140px;
+    }
+  }
+
+  p {
+    @include extra-large-screens {
+      display: none;
+    }
   }
 }
