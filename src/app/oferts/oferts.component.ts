@@ -6,7 +6,6 @@ interface Ofert {
   image: string;
   imageSm: string;
   isActive: boolean;
-  delay: number
 }
 
 @Component({
@@ -31,16 +30,13 @@ export class OfertsComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto1.jpg',
       imageSm: '../../assets/OfertsPhoto11.jpg',
-      isActive: false,
-      delay: 0
-    },
+      isActive: false,   },
     {
       title: 'Ubezpieczenie zdrowotne',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit',
       image: '../../assets/OfertsPhoto2.jpg',
       imageSm: '../../assets/OfertsPhoto12.jpg',
       isActive: false,
-      delay: 150
     },
     {
       title: 'Inwestycje kapitału',
@@ -48,7 +44,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto3.jpg',
       imageSm: '../../assets/OfertsPhoto13.jpg',
       isActive: false,
-      delay: 300
     },
     {
       title: 'Programy oszczędnościowe',
@@ -56,7 +51,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto4.jpg',
       imageSm: '../../assets/OfertsPhoto14.jpg',
       isActive: false,
-      delay: 450
     },
     {
       title: 'Ubezpieczenie majątkowe',
@@ -64,7 +58,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto5.jpg',
       imageSm: '../../assets/OfertsPhoto15.jpg',
       isActive: false,
-      delay: 600
     },
     {
       title: 'Ubezpieczenie komunikacyjne',
@@ -72,7 +65,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto6.jpg',
       imageSm: '../../assets/OfertsPhoto16.jpg',
       isActive: false,
-      delay: 300
     },
     {
       title: 'Kredyty',
@@ -80,7 +72,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto7.jpg',
       imageSm: '../../assets/OfertsPhoto17.jpg',
       isActive: false,
-      delay: 300
     },
     {
       title: 'Nieruchomości',
@@ -88,7 +79,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto8.jpg',
       imageSm: '../../assets/OfertsPhoto18.jpg',
       isActive: false,
-      delay: 300
     },
     {
       title: 'Leasing',
@@ -96,7 +86,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto9.jpg',
       imageSm: '../../assets/OfertsPhoto19.jpg',
       isActive: false,
-      delay: 300
     },
     {
       title: 'Oferta dla firm',
@@ -104,7 +93,6 @@ export class OfertsComponent {
       image: '../../assets/OfertsPhoto10.jpg',
       imageSm: '../../assets/OfertsPhoto20.jpg',
       isActive: false,
-      delay: 300
     },
   ]
 
