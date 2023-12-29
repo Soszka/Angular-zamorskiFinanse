@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   background-color: rgb(0, 0, 58);
   justify-content: space-around;
-  padding: 30px 100px;
+  padding: 30px 60px;
   width: 100%;
   @include extra-large-screens {
     padding: 15px 50px;
@@ -18,7 +18,7 @@
 }
 
 .value {
-  max-width: 30%;
+  max-width: 33%;
   text-align: center;
   margin: 10px;
   padding: 30px;
