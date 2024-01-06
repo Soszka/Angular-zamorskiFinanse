@@ -6,8 +6,8 @@ import { OfertsComponent } from './oferts/oferts.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'company', component: CompanyComponent },
-  { path: 'oferts', component: OfertsComponent },
+  { path: 'firma', component: CompanyComponent },
+  { path: 'oferty', component: OfertsComponent },
 ];
 
 @NgModule({

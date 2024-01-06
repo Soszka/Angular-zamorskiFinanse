@@ -11,7 +11,7 @@ export class OfertsPreviewComponent {
   constructor(private router: Router, private viewportScroller: ViewportScroller) {}
 
   navigateToOferts() {
-    this.router.navigate(['/oferts']).then(() => {
+    this.router.navigate(['/oferty']).then(() => {
       this.viewportScroller.scrollToPosition([0, 0]);
     });
   }
