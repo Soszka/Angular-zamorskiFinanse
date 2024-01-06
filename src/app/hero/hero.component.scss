@@ -48,7 +48,46 @@
     }
   }
 
-  a {
+  .contact-lg {
+
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    font-size: $content-font-size * 1.5;
+    cursor: pointer;
+    position: relative;
+
+    @include small-screens {
+      display: none;
+    }
+  }
+
+  .contact-lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 3px; 
+    background-color: white;
+    transform: scaleX(0); 
+    transform-origin: bottom left;
+    transition: transform 0.5s ease; 
+  }
+
+  .contact-lg:hover::after {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+  }
+
+
+  .contact-sm {
     display: none;
     
     @include small-screens {

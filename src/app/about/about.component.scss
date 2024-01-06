@@ -35,10 +35,10 @@
 .image {
   margin-left: 50px;
   @include mega-large-screens {
-    margin-top: 40px;
+    margin-top: 10px;
   }
   @include extra-large-screens {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   @include large-screens {
     display: none;
