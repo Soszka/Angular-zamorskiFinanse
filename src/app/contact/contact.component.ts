@@ -37,7 +37,7 @@ export class ContactComponent {
       name: 'LinkedIn'
     },
     {
-      link: 'https://www.instagram.com/zamorski.finanse',
+      link: 'https://www.facebook.com/profile.php?id=61555214611076',
       aosDelay: 500,
       icon: faFacebook,
       name: 'Facebook'
