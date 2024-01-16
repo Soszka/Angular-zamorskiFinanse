@@ -1,37 +1,19 @@
 <div class="contact" id="contact">
   <app-title [sectionTitle]="sectionName"></app-title>
-  <h3 data-aos="zoom-in">Wybierz rodzaj <span>kontaktu</span> :</h3>
+  <h3 data-aos="zoom-in">Wybierz rodzaj <span>kontaktu</span>:</h3>
   <div class="contact-types">
-    <a data-aos="zoom-in"
-      href="https://www.instagram.com/zamorski.finanse" 
-      target="_blank">
-      <fa-icon class ="icon" [icon]="faInstagram"></fa-icon>
-      Instagram
-    </a>
-    <a data-aos="zoom-in"
-       data-aos-delay="250" 
-       href="https://www.linkedin.com/in/jakub-zamorski-25a257189/" 
+    <a *ngFor="let item of contactItems" 
+       data-aos="zoom-in" 
+       [attr.data-aos-delay]="item.aosDelay" 
+       href="{{ item.link }}" 
        target="_blank">
-       <fa-icon class ="icon" [icon]="faLinkedin"></fa-icon>
-       LinkedIn
-    </a>
-    <a data-aos="zoom-in" 
-       data-aos-delay="500" 
-       href="https://www.facebook.com/profile.php?id=61555214611076" 
-       target="_blank">
-       <fa-icon class ="icon" [icon]="faFacebook"></fa-icon>
-       Facebook
-    </a>
-    <a data-aos="zoom-in" 
-      data-aos-delay="750" 
-      href="mailto:jakub.zamorski@phinance.pl">
-      <fa-icon class ="icon" [icon]="faEnvelope"></fa-icon>
-      Email
+      <fa-icon class="icon" [icon]="item.icon"></fa-icon>
+      {{ item.name }}
     </a>
   </div>
   <a href="#nav" 
-     data-aos="zoom-in"
-     data-aos-delay="1000" 
-     class="homelink">zamorskifinanse.pl
+    data-aos="zoom-in"
+    data-aos-delay="1000" 
+    class="homelink">zamorskifinanse.pl
   </a>
 </div>
